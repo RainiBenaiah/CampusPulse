@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CampusPulse</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us - CampusPulse</h1>
+    </header>
+    <div class="background-image">
+        <div class="reservation-form">
+            <h2>Reserve Your Slot</h2>
+            <form id="reservationForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">Select Event:</label>
+                <select id="event" name="event">
+                    <option value="Cultural Events">Cultural Events</option>
+                    <option value="Sports and Gaming">Sports and Gaming</option>
+                    <option value="Fun events">Fun events</option>
+                    <option value="Fashion and design">Fashion and design</option>
+                    <option value="TEDtalk">TEDtalk</option>
+                    <option value="Music and art">Music and art</option>
+                </select>
+                <button type="submit">Book Slot</button>
+            </form>
+            <div class="thank-you" id="thankYouMessage" style="display: none;">
+                <p>Thank you for reserving your slot!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>For inquiries, contact us at <a href="mailto:campuspulse@gmail.com">campuspulse@gmail.com</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("reservationForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("reservationForm").style.display = "none";
+            document.getElementById("thankYouMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>
+
