@@ -2,74 +2,85 @@ CTYPE html>
 <html>
 <head>
     <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            background-color: #000000;
-            color: white;
+        section {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
         }
-        h1 {
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .member h1 {
             font-size: 36px;
-            color: white;
+            color: #333;
             padding: 20px 0;
         }
-        img {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
+
+        .member img {
+        max-width: 100px;
+        border-radius: 50%;
         }
+
         .team {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
         }
+
         .member {
-            width: 200px;
-            margin: 10px;
+        margin: 20px;
+        text-align: center;
         }
+
         .job-title {
-            font-weight: bold;
-            margin-top: 5px;
-            color: white;
+        color: #777
         }
+
+        /* footer */
         footer {
-            background-color: #000000;
-            color: #fff;
-            padding: 10px 0;
+        background-color: #000000;
+        color: #fff;
+        padding: 10px 0;
         }
     </style>
 </head>
 <body>
-    <h1>ABOUT US</h1>
-
-    <div class="team">
-        <div class="member">
-            <img src="Bosco.png" alt="Male">
-            <p>Bosco Ishimwe</p>
-            <p class="job-title">Web Designer</p>
-        </div>
-        <div class="member">
-            <img src="Irakoze.jpg" alt="Male">
-            <p>Jean Paul Irakoze</p>
-            <p class="job-title">Graphic Designer</p>
-        </div>
-        <div class="member">
-            <img src="Shaday.png" alt="Female">
-            <p>Shaday Sine</p>
-            <p class="job-title">SEO Specialist</p>
-        </div>
-        <div class="member">
-            <img src="Mustapha.jpg" alt="Female">
-            <p>Rohaenat Mustapha</p>
-            <p class="job-title">Project Manager</p>
-        </div>
-        <div class="member">
-            <img src="Benah.jpg" alt="Male">
-            <p>Benaiah Raini</p>
-            <p class="job-title">Content Writer</p>
-        </div>
-    </div>
+    <section>
+        <h1>ABOUT US</h1>
+  
+      <div class="team">
+          <div class="member">
+              <img src="images/Bosco.png" alt="Male">
+              <p>Bosco Ishimwe</p>
+              <p class="job-title">Web Designer</p>
+          </div>
+          <div class="member">
+              <img src="images/Irakoze.jpg" alt="Male">
+              <p>Jean Paul Irakoze</p>
+              <p class="job-title">Graphic Designer</p>
+          </div>
+          <div class="member">
+              <img src="images/Shaday.png" alt="Female">
+              <p>Shaday Sine</p>
+              <p class="job-title">SEO Specialist</p>
+          </div>
+          <div class="member">
+              <img src="images/Mustapha.jpg" alt="Female">
+              <p>Rohaenat Mustapha</p>
+              <p class="job-title">Project Manager</p>
+          </div>
+          <div class="member">
+              <img src="images/Benah.jpg" alt="Male">
+              <p>Benaiah Raini</p>
+              <p class="job-title">Content Writer</p>
+          </div>
+      </div>
+      </section>
 
     <footer>
         <p>&copy; 2023 | CampusPulse</p>
